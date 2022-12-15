@@ -1,7 +1,6 @@
 describe('Authentication page', () => {
-  it('Visits the Kitchen Sink', () => {
+  it('Visits the Kitchen Sink', { defaultCommandTimeout: 5000 }, () => {
     cy.visit('https://eboutique.irigo.fr/')
-    cy.wait(5000)
     cy.get('.gtm-header-login-link').click()
     cy.get('#password').click({ force: true })
     cy.scrollTo('bottom')
