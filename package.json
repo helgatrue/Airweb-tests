@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "cypress": "^11.2.0",
+    "cypress-image-diff-js": "^1.22.0"
+  }
+}
